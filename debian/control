@@ -1,0 +1,33 @@
+Source: telepathy-kde
+Section: kde
+Priority: optional
+Maintainer: George Kiagiadakis <kiagiadakis.george@gmail.com>
+Build-Depends: debhelper (>= 8)
+Standards-Version: 3.9.2
+
+Package: telepathy-kde
+Architecture: all
+Depends: telepathy-kde-contact-list,
+ telepathy-kde-approver,
+ telepathy-kde-text-ui,
+ kde-config-telepathy-accounts,
+ kde-config-telepathy-accounts-plugins,
+ plasma-widget-telepathy-presence,
+ telepathy-mission-control-5,
+ ${misc:Depends}
+Recommends: telepathy-gabble, telepathy-butterfly, telepathy-haze
+Description: metapackage for installing all the Telepathy-KDE components
+ Telepathy-KDE aims to integrate real-time communication and collaboration
+ features into the KDE Plasma Workspaces. It provides means to connect
+ to several instant messaging networks, chat with your friends and
+ collaborate with them.
+ .
+ Telepathy-KDE consists of several independent components that need to be
+ used together to provide all the available features. This package is
+ a metapackage that installs all those components.
+ .
+ Apart from the dependencies that this metapackage pulls, you will also
+ need to install at least one of the telepathy-gabble, telepathy-butterfly,
+ telepathy-haze packages to be able to connect to your IM networks.
+ gabble provides xmpp, butterfly provides msn and haze provides most other
+ common protocols.

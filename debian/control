@@ -17,7 +17,7 @@ Depends: telepathy-kde-contact-list,
  telepathy-connection-manager,
  ${misc:Depends}
 Recommends: telepathy-gabble
-Suggests: telepathy-butterfly, telepathy-haze
+Suggests: telepathy-butterfly, telepathy-haze, telepathy-sunshine, telepathy-idle
 Description: metapackage for installing all the Telepathy-KDE components
  Telepathy-KDE aims to integrate real-time communication and collaboration
  features into the KDE Plasma Workspaces. It provides means to connect

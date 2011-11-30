@@ -7,14 +7,14 @@ Standards-Version: 3.9.2
 
 Package: telepathy-kde
 Architecture: all
-Depends: telepathy-kde-contact-list,
- telepathy-kde-auth-handler,
- telepathy-kde-integration-module,
- telepathy-kde-approver,
- telepathy-kde-text-ui,
- kde-config-telepathy-accounts,
- plasma-widget-telepathy-presence,
- telepathy-kde-filetransfer-handler,
+Depends: telepathy-kde-contact-list (>= ${kdetp:Version}),
+ telepathy-kde-auth-handler (>= ${kdetp:Version}),
+ telepathy-kde-integration-module (>= ${kdetp:Version}),
+ telepathy-kde-approver (>= ${kdetp:Version}),
+ telepathy-kde-text-ui (>= ${kdetp:Version}),
+ kde-config-telepathy-accounts (>= ${kdetp:Version}),
+ plasma-widget-telepathy-presence (>= ${kdetp:Version}),
+ telepathy-kde-filetransfer-handler (>= ${kdetp:Version}),
  telepathy-mission-control-5,
  telepathy-connection-manager,
  ${misc:Depends}

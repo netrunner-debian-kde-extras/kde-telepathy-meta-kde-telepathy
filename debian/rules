@@ -1,4 +1,9 @@
 #!/usr/bin/make -f
 
+SOURCE_VERSION=$(shell dpkg-parsechangelog | grep '^Version: ' | sed 's/^Version: //' | cut -d'-' -f1)
+
+override_dh_gencontrol:
+	dh_gencontrol -- -Vkdetp:Version='$(SOURCE_VERSION)'
+
 %:
 	dh $@

@@ -15,6 +15,8 @@ Depends: telepathy-kde-contact-list (>= ${kdetp:Version}),
  kde-config-telepathy-accounts (>= ${kdetp:Version}),
  plasma-widget-telepathy-presence (>= ${kdetp:Version}),
  telepathy-kde-filetransfer-handler (>= ${kdetp:Version}),
+ telepathy-kde-send-file (>= ${kdetp:Version}),
+ plasma-widget-telepathy-contact (>= ${kdetp:Version}),
  telepathy-mission-control-5,
  telepathy-connection-manager,
  ${misc:Depends}

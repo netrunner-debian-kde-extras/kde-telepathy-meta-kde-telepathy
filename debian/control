@@ -1,27 +1,55 @@
-Source: meta-telepathy-kde
-Section: kde
+Source: meta-kde-telepathy
+Section: metapackages
 Priority: optional
-Maintainer: George Kiagiadakis <kiagiadakis.george@gmail.com>
-Build-Depends: debhelper (>= 8)
-Standards-Version: 3.9.2
+Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Uploaders: George Kiagiadakis <kiagiadakis.george@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.3
+Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/kde-telepathy/meta-kde-telepathy.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/kde-telepathy/meta-kde-telepathy.git
 
-Package: telepathy-kde
+Package: kde-telepathy-minimal
 Architecture: all
-Depends: telepathy-kde-contact-list (>= ${kdetp:Version}),
- telepathy-kde-auth-handler (>= ${kdetp:Version}),
- telepathy-kde-integration-module (>= ${kdetp:Version}),
- telepathy-kde-approver (>= ${kdetp:Version}),
- telepathy-kde-text-ui (>= ${kdetp:Version}),
- kde-config-telepathy-accounts (>= ${kdetp:Version}),
- plasma-widget-telepathy-presence (>= ${kdetp:Version}),
- telepathy-kde-filetransfer-handler (>= ${kdetp:Version}),
- telepathy-kde-send-file (>= ${kdetp:Version}),
- plasma-widget-telepathy-contact (>= ${kdetp:Version}),
- telepathy-mission-control-5,
+Depends: kde-config-telepathy-accounts (>= ${ktp:Version}),
+ kde-telepathy-approver (>= ${ktp:Version}),
+ kde-telepathy-auth-handler (>= ${ktp:Version}),
+ kde-telepathy-contact-list (>= ${ktp:Version}),
+ kde-telepathy-integration-module (>= ${ktp:Version}),
+ plasma-widget-telepathy-presence (>= ${ktp:Version}),
+ kde-telepathy-text-ui (>= ${ktp:Version}),
+ telepathy-mission-control-5 (>= 1:5.12),
  telepathy-connection-manager,
  ${misc:Depends}
-Recommends: telepathy-gabble, telepathy-haze
-Suggests: telepathy-sunshine, telepathy-idle
+Recommends: telepathy-gabble, telepathy-salut, telepathy-haze
+Suggests: telepathy-rakia, telepathy-idle
+Description: metapackage for installing the basic KDE Telepathy components
+ KDE Telepathy aims to integrate real-time communication and collaboration
+ features into the KDE Plasma Workspaces. It provides means to connect
+ to several instant messaging networks, chat with your friends and
+ collaborate with them.
+ .
+ KDE Telepathy consists of several independent components that need to be
+ used together to provide all the available features. This package is
+ a metapackage that installs the most basic components, for the most simple
+ use case. For installing all the components, use the kde-telepathy
+ metapackage.
+ .
+ Apart from the dependencies that this metapackage pulls, you will also
+ need to install at least one of the telepathy-gabble, telepathy-salut,
+ telepathy-haze packages to be able to connect to your IM networks.
+ gabble provides xmpp (jabber, google talk/plus, facebook), salut provides
+ link-local xmpp (using avahi) and haze provides most other common protocols.
+
+Package: kde-telepathy
+Architecture: all
+Depends: kde-telepathy-minimal (= ${binary:Version}),
+ kde-telepathy-call-ui (>= ${ktp:Version}),
+ plasma-runner-telepathy-contact (>= ${ktp:Version}),
+ kde-telepathy-filetransfer-handler (>= ${ktp:Version}),
+ kde-telepathy-send-file (>= ${ktp:Version}),
+ plasma-widget-telepathy-chat (>= ${ktp:Version}),
+# plasma-widget-telepathy-contact (>= ${ktp:Version}),
+ ${misc:Depends}
 Description: metapackage for installing all the KDE Telepathy components
  KDE Telepathy aims to integrate real-time communication and collaboration
  features into the KDE Plasma Workspaces. It provides means to connect
@@ -33,7 +61,7 @@ Description: metapackage for installing all the KDE Telepathy components
  a metapackage that installs all those components.
  .
  Apart from the dependencies that this metapackage pulls, you will also
- need to install at least one of the telepathy-gabble, telepathy-haze
- packages to be able to connect to your IM networks. gabble provides
- xmpp (jabber, google talk/plus, facebook) and haze provides most other
- common protocols.
+ need to install at least one of the telepathy-gabble, telepathy-salut,
+ telepathy-haze packages to be able to connect to your IM networks.
+ gabble provides xmpp (jabber, google talk/plus, facebook), salut provides
+ link-local xmpp (using avahi) and haze provides most other common protocols.

@@ -20,7 +20,7 @@ Depends: kde-config-telepathy-accounts (>= ${ktp:Version}),
  telepathy-mission-control-5 (>= 1:5.12),
  telepathy-connection-manager,
  ${misc:Depends}
-Recommends: telepathy-gabble, telepathy-salut, telepathy-haze
+Recommends: telepathy-gabble, telepathy-salut, telepathy-haze, telepathy-logger
 Suggests: telepathy-rakia, telepathy-idle
 Description: metapackage for installing the basic KDE Telepathy components
  KDE Telepathy aims to integrate real-time communication and collaboration

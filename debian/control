@@ -44,10 +44,10 @@ Package: kde-telepathy
 Architecture: all
 Depends: kde-telepathy-minimal (= ${binary:Version}),
  kde-telepathy-call-ui (>= ${ktp:Version}),
- plasma-runner-telepathy-contact (>= ${ktp:Version}),
  kde-telepathy-filetransfer-handler (>= ${ktp:Version}),
  kde-telepathy-send-file (>= ${ktp:Version}),
  plasma-widget-telepathy-chat (>= ${ktp:Version}),
+# plasma-runner-telepathy-contact (>= ${ktp:Version}),
 # plasma-widget-telepathy-contact (>= ${ktp:Version}),
  ${misc:Depends}
 Description: metapackage for installing all the KDE Telepathy components

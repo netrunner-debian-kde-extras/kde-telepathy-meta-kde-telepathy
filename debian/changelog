@@ -1,5 +1,5 @@
-meta-kde-telepathy (0.4.0-0r1) UNRELEASED; urgency=low
+meta-kde-telepathy (0.4.0-1) unstable; urgency=low
 
   * Initial release.
 
- -- George Kiagiadakis <kiagiadakis.george@gmail.com>  Sun, 17 Jun 2012 20:32:07 +0300
+ -- George Kiagiadakis <kiagiadakis.george@gmail.com>  Mon, 18 Jun 2012 22:07:23 +0300

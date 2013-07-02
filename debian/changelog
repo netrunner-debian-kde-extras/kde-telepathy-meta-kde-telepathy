@@ -2,6 +2,8 @@ meta-kde-telepathy (0.6.2) UNRELEASED; urgency=low
 
   * New upstream release.
   * Update to version 0.6.2
+  * Replace plasma-widget dependencies with new package
+            kde-telepathy-desktop-applets.
 
  -- Diane Trout <diane@ghic.org>  Mon, 27 May 2013 11:04:51 -0700
 

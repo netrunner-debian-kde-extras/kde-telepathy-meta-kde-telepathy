@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Diane Trout <diane@ghic.org>, Michał Zając <quintasan@kubuntu.org>
 Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/kde-telepathy/meta-kde-telepathy.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/kde-telepathy/meta-kde-telepathy.git
 

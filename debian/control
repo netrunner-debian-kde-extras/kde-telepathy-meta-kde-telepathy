@@ -15,7 +15,6 @@ Depends: kde-config-telepathy-accounts (>= ${ktp:Version}),
  kde-telepathy-auth-handler (>= ${ktp:Version}),
  kde-telepathy-contact-list (>= ${ktp:Version}),
  kde-telepathy-integration-module (>= ${ktp:Version}),
- kde-telepathy-desktop-applets (>= ${ktp:Version}),
  kde-telepathy-text-ui (>= ${ktp:Version}),
  telepathy-mission-control-5 (>= 1:5.12),
  telepathy-connection-manager,
@@ -46,7 +45,8 @@ Depends: kde-telepathy-minimal (= ${binary:Version}),
  kde-telepathy-call-ui (>= ${ktp:Version}),
  kde-telepathy-filetransfer-handler (>= ${ktp:Version}),
  kde-telepathy-send-file (>= ${ktp:Version}),
- kde-telepathy-desktop-applets (>= ${ktp:Version}),
+# kde-telepathy-desktop-applets (>= ${ktp:Version}),
+# kde-telepathy-contact-runner (>= ${ktp:Version}),
  ${misc:Depends}
 Description: metapackage for installing all the KDE Telepathy components
  KDE Telepathy aims to integrate real-time communication and collaboration

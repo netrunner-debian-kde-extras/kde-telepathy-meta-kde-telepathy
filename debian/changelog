@@ -1,6 +1,6 @@
-meta-kde-telepathy (0.6.80) UNRELEASED; urgency=low
+meta-kde-telepathy (0.7.0) UNRELEASED; urgency=low
 
-  * Update to match new upstream release 0.6.80
+  * Update to match new upstream release 0.7.0
   * Add desktop-applets and contact-runner back in.
 
  -- Diane Trout <diane@ghic.org>  Sun, 29 Sep 2013 17:12:15 -0700

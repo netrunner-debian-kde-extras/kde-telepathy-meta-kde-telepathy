@@ -1,9 +1,9 @@
-meta-kde-telepathy (0.9.0) UNRELEASED; urgency=medium
+meta-kde-telepathy (0.9.0) unstable; urgency=medium
 
   * Update to match new upstream stable release 0.9.0
   * Bump Standards-Version to 3.9.6. No changes needed.
 
- -- Diane Trout <diane@ghic.org>  Wed, 31 Dec 2014 22:14:15 -0800
+ -- Diane Trout <diane@ghic.org>  Wed, 20 May 2015 22:13:37 -0700
 
 meta-kde-telepathy (0.8.1) unstable; urgency=medium
 

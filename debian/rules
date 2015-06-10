@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-KTP_VERSION=0.8.80
+KTP_VERSION=0.9.0
 
 override_dh_gencontrol:
 	dh_gencontrol -- -Vktp:Version='$(KTP_VERSION)'

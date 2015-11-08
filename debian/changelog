@@ -1,6 +1,7 @@
 meta-kde-telepathy (15.08.2) UNRELEASED; urgency=medium
 
   * New upstream release 15.08.2
+  * Disable ktp-call-ui not currently supported upstream.
 
  -- Diane Trout <diane@ghic.org>  Sun, 08 Nov 2015 08:29:41 -0800
 
